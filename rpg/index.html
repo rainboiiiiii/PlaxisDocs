@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.0.0.832804651681">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.0.0.832812169853">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.0.0">
@@ -27,11 +27,11 @@
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
-    <link href="../resources/css/retype.css?v=4.0.0.832804651681" rel="stylesheet">
+    <link href="../resources/css/retype.css?v=4.0.0.832812169853" rel="stylesheet">
 
-    <script data-cfasync="false" src="../resources/js/config.js?v=4.0.0.832804651681" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../resources/js/config.js?v=4.0.0.832812169853" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../resources/js/retype.js?v=4.0.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=4.0.0.832804651681" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=4.0.0.832812169853" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -224,7 +224,7 @@ Use <strong><code translate="no" v-pre>/profile</code></strong> for your social 
 </doc-anchor-target>
 <p>Collect passive <strong>coins</strong> and <strong>XP</strong> based on time since your last claim.</p>
 <ul>
-<li><strong>Cooldown:</strong> <code translate="no" v-pre>claimCooldownMinutes</code> in <code translate="no" v-pre>game/rpg_config.json</code> (default <strong>60 minutes</strong>)</li>
+<li><strong>Cooldown:</strong> Current cooldown for the idle claim command is <strong>60 minutes</strong></li>
 <li>The bot tells you how long to wait if you claim too early</li>
 </ul>
 <doc-anchor-target id="world-boss-global">
@@ -233,7 +233,7 @@ Use <strong><code translate="no" v-pre>/profile</code></strong> for your social 
         <span>World boss (global)</span>
     </h2>
 </doc-anchor-target>
-<p>One boss HP pool shared by <strong>every server</strong> Plaxis is in.</p>
+<p>One boss that <strong>every server</strong> Plaxis is in works together to defeat!</p>
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -267,14 +267,14 @@ Use <strong><code translate="no" v-pre>/profile</code></strong> for your social 
             </svg>
         </div>
         <div class="pr-5 ml-3 w-full">
-            <h5>World boss must be active</h5>
+            <h5>World Boss Must Be Active</h5>
 <p>You can only attack when a boss is <strong>active</strong>. If none is spawned, the bot will tell you to wait for an announcement.</p>
         </div>
     </div>
 </div>
 <ul>
-<li><strong>Attack cooldown:</strong> <code translate="no" v-pre>attackCooldownSeconds</code> in config (default <strong>30 seconds</strong>)</li>
-<li><strong>Rewards:</strong> If you land the <strong>defeating blow</strong> and your rank is in the <strong>top 10</strong>, you get bonus coins and XP (default template: <strong>2000</strong> coins, <strong>500</strong> XP)</li>
+<li><strong>Attack cooldown:</strong> Cooldown for attacking any world boss is <strong>30 seconds</strong></li>
+<li><strong>Rewards:</strong> If you land the <strong>defeating blow</strong> and your rank is in the <strong>top 10</strong>, you get bonus coins and XP</li>
 </ul>
 <doc-anchor-target id="rpg-boss-announce-channel-server-staff">
     <h3>
@@ -282,7 +282,7 @@ Use <strong><code translate="no" v-pre>/profile</code></strong> for your social 
         <span><code translate="no" v-pre>/rpg boss-announce-channel</code> (server staff)</span>
     </h3>
 </doc-anchor-target>
-<p>Sets where this server receives spawn/defeat announcements. Requires <strong>Manage Server</strong>.</p>
+<p>Sets where the server receives spawn/defeat announcements. Requires <strong>Manage Server</strong> permission.</p>
 <doc-anchor-target id="guild-raids-per-server">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#guild-raids-per-server">#</doc-anchor-trigger>
@@ -313,7 +313,7 @@ Use <strong><code translate="no" v-pre>/profile</code></strong> for your social 
 </tbody>
 </table>
 </div>
-<p>All raid commands require a <strong>server</strong> channel (not DMs). You must <strong><code translate="no" v-pre>/rpg raid-join</code></strong> before <strong><code translate="no" v-pre>/rpg raid-attack</code></strong>. Default dragon raid lasts <strong>30 minutes</strong> (<code translate="no" v-pre>durationMinutes</code> in config).</p>
+<p>All raid commands require a <strong>server</strong> channel (not DMs). You must <strong><code translate="no" v-pre>/rpg raid-join</code></strong> before <strong><code translate="no" v-pre>/rpg raid-attack</code></strong>. Default dragon raid lasts <strong>30 minutes</strong>. More raid bosses will be released down the line.</p>
 <doc-anchor-target id="quick-rpg-path">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#quick-rpg-path">#</doc-anchor-trigger>
